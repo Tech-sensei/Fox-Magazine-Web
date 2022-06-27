@@ -1,0 +1,43 @@
+@use '../abstracts' as a;
+
+/*========== BASE ==========*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: a.$body-font;
+  font-size: a.$normal-font-size;
+  background-color: a.$body-color;
+  color: a.$text-color;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a, a:visited,a:active {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

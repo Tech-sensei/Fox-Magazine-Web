@@ -1,0 +1,77 @@
+/********* This is for Header ***********/
+@use '../abstracts' as a;
+
+.header{
+    height: a.$header-height;
+    width: 100%;
+    
+}
+
+.navbar{
+    height: a.$header-height;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0;
+
+    &__logo{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+       
+
+        &--img{
+            width: 45px;
+            padding-right: .2rem;
+        }
+        &--title{
+            color: a.$text-color-alt;
+            font-size: a.$h2-font-size;
+            font-family: "Fraunces", serif;
+        }
+    }
+
+    &__contacts{
+        display: none;
+        color: a.$text-color;
+        & a{
+            color: a.$text-color;
+        }
+        @media screen and (min-width: 1024px){
+            display: block;
+        }
+    }
+    
+    &__right{
+        display: flex;
+        align-items: center;
+
+        &--link{
+            display: none;
+            color: a.$text-color;
+        }
+
+        & .button{
+            display: none;
+            background-color: #000;
+            color: #fff;
+            padding: .7rem;
+            margin-inline: 1.2rem;
+            @media screen and (min-width: 1024px){
+                display: block;
+            }
+        }
+
+        &--icon{
+            display: flex;
+            align-items: center;
+            color: #0ba7fb;
+            gap: .3rem;
+        }
+        &--menu{
+            font-size: a.$h1-font-size;
+        }
+
+    }
+    
+}

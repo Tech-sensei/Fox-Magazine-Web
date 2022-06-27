@@ -1,0 +1,16 @@
+  /*========== LAYOUT ==========*/
+
+  @use '../abstracts' as a;
+
+  // REUSABLE SCSS CLASSES
+  
+  .bd-container {
+    max-width: 1200px;
+    width: calc(100% - 3rem);
+    margin: 0 a.$mb-3;
+
+    @media screen and (min-width: 1200px){
+        margin-inline: auto;
+  }
+  }
+  

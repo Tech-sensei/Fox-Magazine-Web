@@ -1,0 +1,8 @@
+/********* This is for Grid ***********/
+  // REUSABLE sCSS CLASSES
+  @use '../abstracts' as a;
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
